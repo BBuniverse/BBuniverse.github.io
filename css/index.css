@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+.navigator {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+}
+
+.navigator li {
+    float: left;
+    list-style-type: none;
+}
+
+.navigator a {
+    font-family: helvetica;
+    display: block;
+    color: #875646;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Show the space that mouse at */
+.navigator a:hover {
+    background-color: #ffffac;
+}
+
+.header h1 {
+    /* set the backgroudn image */
+    background-image: url(../Images/headBackGroud.jpg);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 0;
+}
+
+.header .font {
+    /* move the head to top left position */
+    padding-top: 12%;
+    padding-bottom: 425px;
+    padding-left: 5%;
+    color: #fff8d4;
+    font-size: 50px;
+    font-family: times;
+}
+
+.leftPersonal {
+    width: 55%;
+    float: left;
+    padding-left: 20px;
+    /* background-color: yellow; */
+}
+
+.rightSiteMap {
+    width: 39%;
+    float: right;
+    /* background-color: pink; */
+}
+
+.myTable th {
+    height: 50px;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.myTable td {
+    height: 30px;
+}
+
+.myTable td:hover {
+    background-color: #ffffff;
+}

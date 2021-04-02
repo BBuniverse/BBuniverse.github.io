@@ -1,0 +1,27 @@
+body {
+    background-color: #f0f0f0;
+}
+
+p {
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+}
+
+input,
+select {
+    border-radius: 4px;
+    width: 200px;
+    /* width: 20%; */
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.submit input {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}

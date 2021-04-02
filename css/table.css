@@ -1,0 +1,39 @@
+.myTable {
+    margin-top: 50px;
+}
+
+.myTable table {
+    margin: auto;
+    border: steelblue;
+    border-collapse: collapse;
+    text-align: left;
+    width: 80%;
+}
+
+.myTable caption {
+    font: italic;
+    font-size: 20px;
+    color: steelblue;
+}
+
+.myTable th {
+    background-color: #9c8686;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-width: 2px;
+}
+
+.myTable td {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* Show the space that mouse at */
+.myTable td:hover {
+    background-color: #ffffac;
+}
+
+/* Hide the hyper link's underline */
+a {
+    text-decoration: none;
+}
