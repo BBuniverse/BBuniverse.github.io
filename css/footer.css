@@ -1,0 +1,13 @@
+.footer {
+    clear: both;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #F7F7F7;
+}
+
+.footer-owner {
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 20px;
+    margin: 8px 0;
+}
