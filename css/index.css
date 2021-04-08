@@ -2,28 +2,48 @@ body {
     margin: 0;
 }
 
-.navigator {
-    background-color: #000000;
+.fixed-header {
+    padding-right: 16px;
+    padding-left: 16px;
     position: fixed;
+    margin: 0;
+    align-items: center;
+    background-color: #000000;
     width: 100%;
 }
 
-.navigator li {
+.fixed-header-logo img {
     float: left;
-    list-style-type: none;
+    display: flex;
+    height: 70px;
+    width: 126px;
 }
 
-.navigator a {
+.fixed-header-nav {
+    float: right;
+    display: flex;
+    /* Fully show the navigator */
+    padding-right: 25px;
+}
+
+.fixed-header-nav li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-header-nav a {
     font-family: helvetica;
-    display: block;
+    display: flex;
     color: #875646;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
 }
 
 /* Show the space that mouse at */
-.navigator a:hover {
+.fixed-header a:hover {
     background-color: #ffffac;
 }
 
@@ -39,11 +59,16 @@ body {
 .header .font {
     /* move the head to top left position */
     padding-top: 12%;
-    padding-bottom: 425px;
+    /* padding-bottom: 425px; */
+    padding-bottom: 30%;
     padding-left: 5%;
     color: #fff8d4;
     font-size: 50px;
     font-family: times;
+}
+
+h1 {
+    font-family: helvetica;
 }
 
 .leftPersonal {
