@@ -12,17 +12,18 @@
     <body>
         <!-- Hyperlinks in the navigator-->
         <header class="fixed-header">
-            <a class="fixed-header-logo" href="index.html">
-                <img src="Images/logo.jpg" />
-            </a>
-            <ul class="fixed-header-nav">
-                <!-- <li> <a href="index.html"> HOME </a></li> -->
-                <li> <a href="#siteMap"> Site Map </a></li>
-                <li> <a href="./pages/cv.html" target="_blank"> CV </a></li>
-                <li> <a href="./pages/work.html" target="_blank"> Work Exp</a></li>
-                <li> <a href="./pages/sourcelog.html" target="_blank"> Source Log </a></li>
-                <li> <a href="./pages/feedback.html" target="_blank"> Feedback </a></li>
-            </ul>
+            <div>
+                <a class="fixed-header-logo" href="index.html">
+                    <img src="Images/logo.jpg" />
+                </a>
+            </div>
+            <div class="fixed-header-nav">
+                <ul>
+                    <li> <a href="./pages/siteMap.html" target="_blank"> Site Map </a></li>
+                    <li> <a href="./pages/imageMap.html" target="_blank"> Image Gallery </a></li>
+                    <li> <a href="./pages/feedback.html" target="_blank"> Feedback </a></li>
+                </ul>
+            </div>
         </header>
 
         <main>
@@ -34,91 +35,87 @@
                 </div>
 
                 <!-- Personal information -->
-                <div class="leftPersonal">
-                    <div>
-                        <h1 class="aboutMe"> About me </h1>
+                <section class="split">
+                    <div class="leftSplit">
+                        <h3> About me </h3>
                         <a id="aboutMe"></a>
-                        <p>
-                            I am an undergraduate student and study for a Bachelor of Advanced Computing Honours at ANU.
-                            Machine learning, Deep learning are my interested area. Overall, I would like to spend more
-                            time
-                            on Natural Language Processing. Personally, I think NLP can be used comprehensively. Such as
-                            translating, help the handicapped to understand the real world.
-                            <br />
-                            <br />
-                            In my leisure time, watching movies can help me to get relax and get a better understanding
-                            of
-                            the wide world, so does a good reading habit. GYM can do me a favor to build a healthier
-                            body.
-                            As we all know, engineers or coders will spend a lot of time in front of the desk and
-                            computer,
-                            which should be taken seriously.
-                        </p>
-                        <p> My email address is
-                            <a href="mailto:u6726602@anu.edu.au?subject=Nice%20to%20meet%20you">
-                                u6726602@anu.edu.au</a>
-                            . If you have similar interesting areas or hobbies, welcome to contact me by email.
-                        </p>
-                    </div>
-                    <br />
-                    <div>
-                        <h1 class="myPassion"> My passion </h1>
+                        <div class="description">
+                            <p>
+                                I am an undergraduate student and study for a Bachelor of Advanced Computing Honours at
+                                ANU.
+                                Machine learning, Deep learning are my interested area. Overall, I would like to spend
+                                more
+                                time
+                                on Natural Language Processing. Personally, I think NLP can be used comprehensively.
+                                Such as
+                                translating, help the handicapped to understand the real world.
+                                <br />
+                                <br />
+                                In my leisure time, watching movies can help me to get relax and get a better
+                                understanding
+                                of
+                                the wide world, so does a good reading habit. GYM can do me a favor to build a healthier
+                                body.
+                                As we all know, engineers or coders will spend a lot of time in front of the desk and
+                                computer,
+                                which should be taken seriously.
+                            </p>
+                            <p> My email address is
+                                <a href="mailto:u6726602@anu.edu.au?subject=Nice%20to%20meet%20you">
+                                    u6726602@anu.edu.au</a>
+                                . If you have similar interesting areas or hobbies, welcome to contact me by email.
+                            </p>
+                        </div>
+                        <br />
+                        <h3> My passion </h3>
                         <a id="myPassion"></a>
+                        <div class="description">
+                            <ul>
+                                <li>Basically, my website will be my digital and re-editable personal resume.</li>
+                                <li>First of all, I will demonstrate some skills of mine and some fields I interest in.
+                                </li>
+                                <li>Second, the website will record all stages of my career or internship, which will
+                                    include
+                                    the specific period that I work for the company. Furthermore, all projects that I
+                                    have handled will be recorded and specific details can be even demonstrated once
+                                    they
+                                    are
+                                    non-confidential projects.
+                                </li>
+                                <li>The most important thing is how exciting and fulfilling it is to attract more people
+                                    with
+                                    the same interests and hobbies through the displayed growth experience
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <aside class="rightSplit">
+                        <h3> More information </h3>
                         <ul>
-                            <li>Basically, my website will be my digital and re-editable personal resume.</li>
-                            <li>First of all, I will demonstrate some skills of mine and some fields I interest in.</li>
-                            <li>Second, the website will record all stages of my career or internship, which will
-                                include
-                                the specific period that I work for the company. Furthermore, all projects that I
-                                have handled will be recorded and specific details can be even demonstrated once they
-                                are
-                                non-confidential projects.
-                            </li>
-                            <li>The most important thing is how exciting and fulfilling it is to attract more people
-                                with
-                                the same interests and hobbies through the displayed growth experience
-                            </li>
+                            <li><a href="./pages/work.html"> Work Exp </a></li>
+                            <li><a href="./pages/cv.html"> CV </a></li>
                         </ul>
-                    </div>
-                </div>
-
-                <!-- The site map of the whole website -->
-                <div class="rightSiteMap">
-                    <a id="siteMap"></a>
-                    <h1> WebSite Map </h1>
-                    <div class="myTable">
-                        <table>
-                            <tr>
-                                <th> About me</th>
-                                <th> Resources </th>
-                            </tr>
-                            <tr>
-                                <td> <a href="index.html"> HOME </a> </td>
-                                <td> <a href="./pages/sourcelog.html"> Source Log</a></td>
-                            </tr>
-                            <tr>
-                                <td> <a href="./pages/cv.html"> CV </a></td>
-                                <td> <a href="./pages/feedback.html"> Feedback</a> </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="./pages/work.html"> Work Exp</a></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
+                    </aside>
+                </section>
             </div>
         </main>
 
         <footer class="footer">
             <hr />
-            <h5 class="footer-owner">
-                <strong>TBW</strong>
-            </h5>
-
-            <!-- Back to the top of the website -->
-            <div style="clear:both;text-align:right;padding-right: 20px;">
-                <a href="javascript:scrollTo(0,0)"> Back to top </a>
+            <div class="footer-owner">
+                <strong> TBW </strong>
+                <div class="socialNetwork">
+                    <a href="https://www.facebook.com/chinatangbowen/">
+                        <img src="Images/facebook.svg" />
+                    </a>
+                    <a href="https://www.instagram.com/lollipop_bowen/">
+                        <img src="Images/instagram.svg" />
+                    </a>
+                </div>
+                <!-- Back to the top of the website -->
+                <div style="clear:both;text-align:right;">
+                    <a href="javascript:scrollTo(0,0)"> Back to top </a>
+                </div>
             </div>
         </footer>
     </body>

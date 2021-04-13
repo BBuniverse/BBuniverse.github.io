@@ -8,14 +8,15 @@ body {
     position: fixed;
     margin: 0;
     align-items: center;
-    background-color: #000000;
+    /* Glass style */
+    background-color: rgba(14, 14, 14, 0.7);
     width: 100%;
 }
 
 .fixed-header-logo img {
     float: left;
     display: flex;
-    height: 70px;
+    height: 75px;
     width: 126px;
 }
 
@@ -34,6 +35,7 @@ body {
 }
 
 .fixed-header-nav a {
+    font-size: 20px;
     font-family: helvetica;
     display: flex;
     color: #875646;
@@ -50,6 +52,7 @@ body {
 .header h1 {
     /* set the backgroudn image */
     background-image: url(../Images/headBackGroud.jpg);
+    /* Fill the side while scaling */
     background-color: #000000;
     background-repeat: no-repeat;
     background-position: top;
@@ -58,8 +61,7 @@ body {
 
 .header .font {
     /* move the head to top left position */
-    padding-top: 12%;
-    /* padding-bottom: 425px; */
+    padding-top: 10%;
     padding-bottom: 30%;
     padding-left: 5%;
     color: #fff8d4;
@@ -67,33 +69,25 @@ body {
     font-family: times;
 }
 
-h1 {
-    font-family: helvetica;
+.split {
+    display: flex;
+    margin: auto;
+    width: 70%;
 }
 
-.leftPersonal {
-    width: 55%;
-    float: left;
-    padding-left: 20px;
-    /* background-color: yellow; */
+.leftSplit {
+    margin-right: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.rightSiteMap {
-    width: 39%;
-    float: right;
-    /* background-color: pink; */
+.rightSplit {
+    flex: 1 0 auto;
+    margin-right: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.myTable th {
-    height: 50px;
-    font-size: 20px;
-    background-color: #ffffff;
-}
-
-.myTable td {
-    height: 30px;
-}
-
-.myTable td:hover {
-    background-color: #ffffff;
+.description {
+    line-height: 1.3;
 }

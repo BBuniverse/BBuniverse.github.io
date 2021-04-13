@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+.myTable th {
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.myTable td {
+    text-align: center;
+    height: 30px;
+}

@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+.myTable th {
+    height: 50px;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.myTable td {
+    height: 30px;
+}
+
+.myTable td:hover {
+    background-color: #ffffff;
+}
