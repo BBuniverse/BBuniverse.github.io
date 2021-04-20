@@ -7,54 +7,56 @@
         <title>Feedback Form Page</title>
     </head>
     <body>
-        <div>
-            <h1 class="header">Please fill the Question follow your heart.
+        <main>
+            <div>
+                <h1 class="header">Please fill the Question follow your heart.
+                    <br />
+                    And I will take each of them seriously
+                </h1>
+            </div>
+            <form enctype="text/plain" action="mailto:u6726602@anu.edu.au?subject=The%20COMP1710%20Feedback"
+                method="post" style="text-align: center;">
+                <div>
+                    <p>Your Name</p>
+                    <div><input name="GivenName" placeholder="Given Name" />
+                        <input name="FamilyName" placeholder="Family Name" />
+                    </div>
+                </div>
                 <br />
-                And I will take each of them seriously
-            </h1>
-        </div>
-        <form enctype="text/plain" action="mailto:u6726602@anu.edu.au?subject=The%20COMP1710%20Feedback" method="post"
-            style="text-align: center;">
-            <div>
-                <p>Your Name</p>
-                <div><input name="GivenName" placeholder="Given Name" />
-                    <input name="FamilyName" placeholder="Family Name" />
-                </div>
-            </div>
-            <br />
-            <div>
-                <p>Your email address</p>
-                <div><input name="senderEmail" placeholder="Your Email Address" /></div>
-            </div>
-            <br />
-            <div>
-                <p>What is your gender?</p>
                 <div>
-                    <select name="Gender">
-                        <option value="none">I prefer not to say</option>
-                        <option value="male">Male</option>
-                        <option value="femal">Female</option>
-                        <option value="lgbt">LGBT</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <p>Your email address</p>
+                    <div><input name="senderEmail" placeholder="Your Email Address" /></div>
                 </div>
-            </div>
-            <br />
-            <div>
-                <p>Please fill in your feedback</p>
+                <br />
                 <div>
-                    <textarea name="Feedback" cols="60" rows="13"
-                        placeholder="Please write your feedback in the box…"></textarea>
+                    <p>What is your gender?</p>
+                    <div>
+                        <select name="Gender">
+                            <option value="none">I prefer not to say</option>
+                            <option value="male">Male</option>
+                            <option value="femal">Female</option>
+                            <option value="lgbt">LGBT</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <br />
-            <div class="submit">
-                Submit:
-                <input type="submit" value="Submit" style="background-color: aqua;" />
-                or
-                <input type="reset" value="Cancel" style="background-color: darkgray;" />
-            </div>
-        </form>
+                <br />
+                <div>
+                    <p>Please fill in your feedback</p>
+                    <div>
+                        <textarea name="Feedback" cols="60" rows="13"
+                            placeholder="Please write your feedback in the box…"></textarea>
+                    </div>
+                </div>
+                <br />
+                <div class="submit">
+                    Submit:
+                    <input type="submit" value="Submit" style="background-color: aqua;" />
+                    or
+                    <input type="reset" value="Cancel" style="background-color: darkgray;" />
+                </div>
+            </form>
+        </main>
 
 
         <footer class="footer">
@@ -68,7 +70,11 @@
                     <a href="https://www.instagram.com/lollipop_bowen/">
                         <img src="../Images/instagram.svg" />
                     </a>
+                    <a href="">
+                        <img src="../Images/github.svg" />
+                    </a>
                 </div>
+                <div id="time"></div>
                 <!-- Back to the top of the website -->
                 <div style="clear:both;text-align:right;">
                     <a href="javascript:scrollTo(0,0)"> Back to top </a>
@@ -76,4 +82,14 @@
             </div>
         </footer>
     </body>
+    <script type="text/javascript">
+        function change() {
+            var date = new Date();
+            var mytime = date.toLocaleTimeString();
+            document.getElementById('time').innerHTML = mytime;
+        }
+
+        change()
+        setInterval("change()", 1000)
+    </script>
 </html>

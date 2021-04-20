@@ -3,8 +3,7 @@ body {
 }
 
 .fixed-header {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 0 16px;
     position: fixed;
     margin: 0;
     align-items: center;
@@ -52,10 +51,9 @@ body {
 .header h1 {
     /* set the backgroudn image */
     background-image: url(../Images/headBackGroud.jpg);
-    /* Fill the side while scaling */
-    background-color: #000000;
     background-repeat: no-repeat;
     background-position: top;
+    background-size: cover;
     margin: 0;
 }
 
@@ -71,21 +69,21 @@ body {
 
 .split {
     display: flex;
-    margin: auto;
-    width: 70%;
+    /* main  section */
+    margin: 0 10%;
+    padding: 0 30px
 }
 
 .leftSplit {
+    margin: 20px 0;
     margin-right: 10%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    /* margin: 0 10%; */
 }
 
 .rightSplit {
     flex: 1 0 auto;
-    margin-right: 5%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 20px 0;
+    margin-right: 10%;
 }
 
 .description {

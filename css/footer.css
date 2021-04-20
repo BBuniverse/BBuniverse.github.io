@@ -1,25 +1,31 @@
+h1 {
+    margin-left: 2%;
+}
+
 h3 {
     font-family: helvetica;
 }
 
 .footer {
-    clear: both;
-    padding-left: 24px;
-    padding-right: 24px;
     background-color: #F7F7F7;
 }
 
 .footer-owner {
-    /* display: flex; */
     font-size: 13px;
     font-family: helvetica;
-    width: 95%;
-    margin: auto;
+    margin: 0 10%;
+    padding: 0 30px;
 }
-.socialNetwork{
+
+.socialNetwork {
     margin-top: 10px;
 }
+
 .socialNetwork img {
     width: 32px;
     height: 32px;
+}
+
+#time{
+    text-align: center;
 }

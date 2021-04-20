@@ -6,9 +6,10 @@
         <title>Work Exp</title>
     </head>
     <body>
-        <h1>Work Experience</h1>
-        <p> wait to develop</p>
-
+        <main>
+            <h1>Work Experience</h1>
+            <p> wait to develop</p>
+        </main>
 
         <footer class="footer">
             <hr />
@@ -21,7 +22,11 @@
                     <a href="https://www.instagram.com/lollipop_bowen/">
                         <img src="../Images/instagram.svg" />
                     </a>
+                    <a href="">
+                        <img src="../Images/github.svg" />
+                    </a>
                 </div>
+                <div id="time"></div>
                 <!-- Back to the top of the website -->
                 <div style="clear:both;text-align:right;">
                     <a href="javascript:scrollTo(0,0)"> Back to top </a>
@@ -29,4 +34,14 @@
             </div>
         </footer>
     </body>
+    <script type="text/javascript">
+        function change() {
+            var date = new Date();
+            var mytime = date.toLocaleTimeString();
+            document.getElementById('time').innerHTML = mytime;
+        }
+
+        change()
+        setInterval("change()", 1000)
+    </script>
 </html>

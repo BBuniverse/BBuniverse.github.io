@@ -3,10 +3,11 @@
     <link href="css/table.css" rel="stylesheet" type="text/css">
     <link href="css/footer.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/html" />
-        <title> My website </title>
+        <title>My website</title>
     </head>
 
     <body>
@@ -19,55 +20,46 @@
             </div>
             <div class="fixed-header-nav">
                 <ul>
-                    <li> <a href="./pages/siteMap.html" target="_blank"> Site Map </a></li>
-                    <li> <a href="./pages/imageMap.html" target="_blank"> Image Gallery </a></li>
-                    <li> <a href="./pages/feedback.html" target="_blank"> Feedback </a></li>
+                    <li> <a href="./pages/siteMap.html" target="_blank"> Site Map </a>
+                    </li>
+                    <li> <a href="./pages/imageMap.html" target="_blank"> Image Gallery </a>
+                    </li>
+                    <li> <a href="./pages/feedback.html" target="_blank"> Feedback </a>
+                    </li>
                 </ul>
             </div>
         </header>
-
         <main>
             <div class="container">
-
                 <!-- The welcome sentence of the website -->
                 <div class="header">
                     <h1 class="font"> Record my Path in the World here </h1>
                 </div>
-
                 <!-- Personal information -->
                 <section class="split">
                     <div class="leftSplit">
                         <h3> About me </h3>
+
                         <a id="aboutMe"></a>
                         <div class="description">
-                            <p>
-                                I am an undergraduate student and study for a Bachelor of Advanced Computing Honours at
-                                ANU.
-                                Machine learning, Deep learning are my interested area. Overall, I would like to spend
-                                more
-                                time
-                                on Natural Language Processing. Personally, I think NLP can be used comprehensively.
-                                Such as
-                                translating, help the handicapped to understand the real world.
+                            <p>I am an undergraduate student and study for a Bachelor of Advanced Computing Honours at
+                                ANU. Machine learning, Deep learning are my interested area. Overall, I would like to
+                                spend more time on Natural Language Processing. Personally, I think NLP can
+                                be used comprehensively. Such as translating, help the handicapped to understand the
+                                real world.
                                 <br />
-                                <br />
-                                In my leisure time, watching movies can help me to get relax and get a better
-                                understanding
-                                of
-                                the wide world, so does a good reading habit. GYM can do me a favor to build a healthier
-                                body.
-                                As we all know, engineers or coders will spend a lot of time in front of the desk and
-                                computer,
-                                which should be taken seriously.
+                                <br />In my leisure time, watching movies can help me to get relax and get a better
+                                understanding of the wide world, so does a good reading habit. GYM can do me a favor to
+                                build a healthier body. As we all know, engineers or coders will spend a lot of time
+                                in front of the desk and computer, which should be taken seriously.
                             </p>
-                            <p> My email address is
-                                <a href="mailto:u6726602@anu.edu.au?subject=Nice%20to%20meet%20you">
+                            <p>My email address is <a href="mailto:u6726602@anu.edu.au?subject=Nice to meet you">
                                     u6726602@anu.edu.au</a>
-                                . If you have similar interesting areas or hobbies, welcome to contact me by email.
-                            </p>
+                                . If you have similar interesting areas or hobbies, welcome to contact me by email.</p>
                         </div>
                         <br />
                         <h3> My passion </h3>
+
                         <a id="myPassion"></a>
                         <div class="description">
                             <ul>
@@ -75,25 +67,23 @@
                                 <li>First of all, I will demonstrate some skills of mine and some fields I interest in.
                                 </li>
                                 <li>Second, the website will record all stages of my career or internship, which will
-                                    include
-                                    the specific period that I work for the company. Furthermore, all projects that I
-                                    have handled will be recorded and specific details can be even demonstrated once
-                                    they
-                                    are
-                                    non-confidential projects.
-                                </li>
+                                    include the specific period that I work for the company. Furthermore, all projects
+                                    that I have handled will be recorded and specific details can be even demonstrated
+                                    once
+                                    they are non-confidential projects.</li>
                                 <li>The most important thing is how exciting and fulfilling it is to attract more people
-                                    with
-                                    the same interests and hobbies through the displayed growth experience
-                                </li>
+                                    with the same interests and hobbies through the displayed growth experience</li>
                             </ul>
                         </div>
                     </div>
                     <aside class="rightSplit">
                         <h3> More information </h3>
                         <ul>
-                            <li><a href="./pages/work.html"> Work Exp </a></li>
-                            <li><a href="./pages/cv.html"> CV </a></li>
+                            <li><a href="./pages/work.html"> Work Exp </a>
+                            </li>
+                            <br />
+                            <li><a href="./pages/cv.html"> CV </a>
+                            </li>
                         </ul>
                     </aside>
                 </section>
@@ -111,7 +101,11 @@
                     <a href="https://www.instagram.com/lollipop_bowen/">
                         <img src="Images/instagram.svg" />
                     </a>
+                    <a href="">
+                        <img src="Images/github.svg" />
+                    </a>
                 </div>
+                <div id="time"></div>
                 <!-- Back to the top of the website -->
                 <div style="clear:both;text-align:right;">
                     <a href="javascript:scrollTo(0,0)"> Back to top </a>
@@ -119,4 +113,14 @@
             </div>
         </footer>
     </body>
+    <script type="text/javascript">
+        function change() {
+            var date = new Date();
+            var mytime = date.toLocaleTimeString();
+            document.getElementById('time').innerHTML = mytime;
+        }
+
+        change()
+        setInterval("change()", 1000)
+    </script>
 </html>

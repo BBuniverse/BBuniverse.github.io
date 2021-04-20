@@ -8,39 +8,42 @@
         <title>Image Map</title>
     </head>
     <body>
-        <h1> Image Gallery</h1>
-
-        <div class="rightSiteMap">
-            <div class="myTable">
-                <table>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td> <a href="index.html"> HOME </a> </td>
-                        <td> <a href="./pages/sourcelog.html"> Source Log </a></td>
-                    </tr>
-                    <tr>
-                        <td> <a href="./pages/cv.html"> CV </a></td>
-                        <td> <a href="./pages/feedback.html"> Feedback </a> </td>
-                    </tr>
-                    <tr>
-                        <td> <a href="./pages/work.html"> Work Exp </a></td>
-                    </tr>
-                    <tr>
-                        <td> <a href="./pages/imageMap.html"> Image Gallery </a></td>
-                    </tr>
-                </table>
-            </div>
+        <div class="header">
+            <h1> Image Gallery</h1>
         </div>
 
-        <img src="../Images/logo.jpg" width="100" height="80" usemap="#ImageMap" />
-        <map name="ImageMap">
-            <area shape="rect" coords="0, 0, 50, 50" href="../index.html" />
-        </map>
-
-
+        <main>
+            <div class="gallery-section">
+                <div class="inner-width">
+                    <div class="gallery">
+                        <a href="../Images/headBackGroud.jpg" class="image">
+                            <img src="../Images/headBackGroud.jpg" />
+                        </a>
+                        <a href="../Images/github.svg" class="image">
+                            <img src="../Images/github.svg" />
+                        </a>
+                        <a href="../Images/github.svg" class="image">
+                            <img src="../Images/github.svg" />
+                        </a>
+                        <a href="../Images/logo.jpg" class="image">
+                            <img src="../Images/logo.jpg" />
+                        </a>
+                        <a href="../Images/logo.jpg" class="image">
+                            <img src="../Images/logo.jpg" />
+                        </a>
+                        <a href="../Images/logo.jpg" class="image">
+                            <img src="../Images/logo.jpg" />
+                        </a>
+                        <a href="../Images/github.svg" class="image">
+                            <img src="../Images/github.svg" />
+                        </a>
+                        <a href="../Images/github.svg" class="image">
+                            <img src="../Images/github.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <footer class="footer">
             <hr />
@@ -53,7 +56,11 @@
                     <a href="https://www.instagram.com/lollipop_bowen/">
                         <img src="../Images/instagram.svg" />
                     </a>
+                    <a href="">
+                        <img src="../Images/github.svg" />
+                    </a>
                 </div>
+                <div id="time"></div>
                 <!-- Back to the top of the website -->
                 <div style="clear:both;text-align:right;">
                     <a href="javascript:scrollTo(0,0)"> Back to top </a>
@@ -61,4 +68,14 @@
             </div>
         </footer>
     </body>
+    <script type="text/javascript">
+        function change() {
+            var date = new Date();
+            var mytime = date.toLocaleTimeString();
+            document.getElementById('time').innerHTML = mytime;
+        }
+
+        change()
+        setInterval("change()", 1000)
+    </script>
 </html>

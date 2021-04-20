@@ -1,5 +1,6 @@
-h1 {
-    text-align: center;
+.myTable {
+    margin: 50px 10% 20px 10%;
+    padding: 0 10%;
 }
 
 .myTable th {

@@ -8,47 +8,59 @@
         <title>Source Log Page</title>
     </head>
     <body>
-        <h1>Sources Log</h1>
-        <div class="myTable">
-            <table border="1">
-                <caption>Resources Used in my Website</caption>
-                <tr>
-                    <th> Original </th>
-                    <th> Website </th>
-                    <th> Type </th>
-                    <th> How Altered or Justification </th>
-                </tr>
-                <tr>
-                    <td><a href="https://unsplash.com/photos/WZh1QZFB4kc">
-                            Main page earth images.jpg </a></td>
-                    <td><a href="https://unsplash.com/">
-                            Unsplash</a></td>
-                    <td>Graphic</td>
-                    <td>Resized the image to make it smaller in order to cooperate with the structure.
-                    </td>
-                </tr>
-                <tr>
-                    <td> <a href="../Images/logo.jpg"> Website Logo </a> </td>
-                    <td> <a> Designed by my self </a> </td>
-                    <td> <a> Graphic </a></td>
-                    <td> Resized the image to make it suitable to the header area </td>
-                </tr>
-                <tr>
-                    <td> <a href="../Images/facebook.svg"> Facebook Logo </a> </td>
-                    <td> <a href="https://iconscout.com/icon/facebook-259">
-                            iconscout</a> </td>
-                    <td> <a> Graphic </a></td>
-                    <td> Resized the image to make it suitable to the footer area </td>
-                </tr>
-                <tr>
-                    <td> <a href="../Images/instagram.svg"> Instagram Logo </a> </td>
-                    <td> <a href="https://iconscout.com/icon/instagram-213">
-                            iconscout</a> </td>
-                    <td> <a> Graphic </a></td>
-                    <td> Resized the image to make it suitable to the footer area </td>
-                </tr>
-            </table>
-        </div>
+        <main>
+            <div>
+                <h1>Sources Log</h1>
+                <hr />
+            </div>
+            <div class="myTable">
+                <table border="1">
+                    <caption>Resources Used in my Website</caption>
+                    <tr>
+                        <th> Original </th>
+                        <th> Website </th>
+                        <th> Type </th>
+                        <th> How Altered or Justification </th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://unsplash.com/photos/WZh1QZFB4kc">
+                                Main page earth images.jpg </a></td>
+                        <td><a href="https://unsplash.com/">
+                                Unsplash</a></td>
+                        <td>Graphic</td>
+                        <td>Resized the image to make it smaller in order to cooperate with the structure.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../Images/logo.jpg"> Website Logo </a> </td>
+                        <td> <a> Designed by my self </a> </td>
+                        <td> <a> Graphic </a></td>
+                        <td> Resized the image to make it suitable to the header area </td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../Images/facebook.svg"> Facebook Logo </a> </td>
+                        <td> <a href="https://iconscout.com/icon/facebook-259">
+                                iconscout</a> </td>
+                        <td> <a> Graphic </a></td>
+                        <td> Resized the image to make it suitable to the footer area </td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../Images/instagram.svg"> Instagram Logo </a> </td>
+                        <td> <a href="https://iconscout.com/icon/instagram-213">
+                                iconscout</a> </td>
+                        <td> <a> Graphic </a></td>
+                        <td> Resized the image to make it suitable to the footer area </td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../Images/github.svg"> Github Logo </a> </td>
+                        <td> <a href="https://iconscout.com/icon/github-1521500">
+                                iconscout</a> </td>
+                        <td> <a> Graphic </a></td>
+                        <td> Resized the image to make it suitable to the footer area </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
 
         <footer class="footer">
             <hr />
@@ -61,7 +73,11 @@
                     <a href="https://www.instagram.com/lollipop_bowen/">
                         <img src="../Images/instagram.svg" />
                     </a>
+                    <a href="">
+                        <img src="../Images/github.svg" />
+                    </a>
                 </div>
+                <div id="time"></div>
                 <!-- Back to the top of the website -->
                 <div style="clear:both;text-align:right;">
                     <a href="javascript:scrollTo(0,0)"> Back to top </a>
@@ -69,4 +85,14 @@
             </div>
         </footer>
     </body>
+    <script type="text/javascript">
+        function change() {
+            var date = new Date();
+            var mytime = date.toLocaleTimeString();
+            document.getElementById('time').innerHTML = mytime;
+        }
+
+        change()
+        setInterval("change()", 1000)
+    </script>
 </html>
