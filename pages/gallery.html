@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="../css/table.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/gallery.css" rel="stylesheet" type="text/css">
+    <head>
+        <meta charset="utf-8">
+        <title>Image Gallery</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1> Image Gallery</h1>
+        </div>
+
+        <main>
+            <div class="gallery-section">
+                <div class="inner-width">
+                    <div class="gallery">
+                        <a href="../Images/headBackGroud.jpg" class="image">
+                            <img src="../Images/headBackGroud.jpg" />
+                        </a>
+                        <a href="../Images/github.svg" class="image">
+                            <img src="../Images/github.svg" />
+                        </a>
+                        <a href="../Images/github.svg" class="image">
+                            <img src="../Images/github.svg" />
+                        </a>
+                        <a href="../Images/logo.jpg" class="image">
+                            <img src="../Images/logo.jpg" />
+                        </a>
+                        <a href="../Images/logo.jpg" class="image">
+                            <img src="../Images/logo.jpg" />
+                        </a>
+                        <a href="../Images/logo.jpg" class="image">
+                            <img src="../Images/logo.jpg" />
+                        </a>
+                        <a href="../Images/github.svg" class="image">
+                            <img src="../Images/github.svg" />
+                        </a>
+                        <a href="../Images/github.svg" class="image">
+                            <img src="../Images/github.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <hr />
+            <div class="footer-owner">
+                <strong> TBW </strong>
+                <div class="socialNetwork">
+                    <a href="https://www.facebook.com/chinatangbowen/">
+                        <img src="../Images/facebook.svg" />
+                    </a>
+                    <a href="https://www.instagram.com/lollipop_bowen/">
+                        <img src="../Images/instagram.svg" />
+                    </a>
+                    <a href="">
+                        <img src="../Images/github.svg" />
+                    </a>
+                </div>
+                <div id="time"></div>
+                <!-- Back to the top of the website -->
+                <div style="clear:both;text-align:right;">
+                    <a href="javascript:scrollTo(0,0)"> Back to top </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        function change() {
+            var date = new Date();
+            var mytime = date.toLocaleTimeString();
+            document.getElementById('time').innerHTML = mytime;
+        }
+
+        change()
+        setInterval("change()", 1000)
+    </script>
+</html>

@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <link href="../css/table.css" rel="stylesheet" type="text/css">
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
-    <link href="../css/imageMap.css" rel="stylesheet" type="text/css">
+    <link href="../css/imageMap.css" rel="stylesheet" type="text/css" />
     <head>
         <meta charset="utf-8">
-        <title>Image Map</title>
+        <title> Image Map </title>
     </head>
     <body>
-        <div class="header">
-            <h1> Image Gallery</h1>
-        </div>
-
         <main>
-            <div class="gallery-section">
-                <div class="inner-width">
-                    <div class="gallery">
-                        <a href="../Images/headBackGroud.jpg" class="image">
-                            <img src="../Images/headBackGroud.jpg" />
-                        </a>
-                        <a href="../Images/github.svg" class="image">
-                            <img src="../Images/github.svg" />
-                        </a>
-                        <a href="../Images/github.svg" class="image">
-                            <img src="../Images/github.svg" />
-                        </a>
-                        <a href="../Images/logo.jpg" class="image">
-                            <img src="../Images/logo.jpg" />
-                        </a>
-                        <a href="../Images/logo.jpg" class="image">
-                            <img src="../Images/logo.jpg" />
-                        </a>
-                        <a href="../Images/logo.jpg" class="image">
-                            <img src="../Images/logo.jpg" />
-                        </a>
-                        <a href="../Images/github.svg" class="image">
-                            <img src="../Images/github.svg" />
-                        </a>
-                        <a href="../Images/github.svg" class="image">
-                            <img src="../Images/github.svg" />
-                        </a>
+            <div class="container">
+                <div class="header">
+                    <h1> Coding Equipment </h1>
+                </div>
+                <div class="imageMap">
+                    <div>
+                        <img src="../Images/MacBookPro.jpg" width="340" height="400" usemap="#Computer">
+                        <map name="Computer">
+                            <area shape="rect" coords="100, 0, 340, 300"
+                                href="https://www.apple.com/shop/buy-mac/macbook-pro/16-inch" />
+                        </map>
+                        <p> MacBookPro </p>
+                    </div>
+                    <div>
+                        <img src="../Images/HHKB.png" width="170" height="340" usemap="#Keyboard">
+                        <map name="Keyboard">
+                            <area shape="rect" coords="0, 50, 340, 170"
+                                href="https://hhkeyboard.us/happyhacking/pro-hybrid/" />
+                        </map>
+                        <p> HHKB </p>
+                    </div>
+                    <div>
+                        <img src="../Images/MXMaster3.webp" width="230" height="400" usemap="#Mouse">
+                        <map name="Mouse">
+                            <area shape="rect" coords="70, 0, 230, 400"
+                                href="https://www.logitech.com/en-us/products/mice/mx-master-3.910-005620.html" />
+                        </map>
+                        <p> MX Master3 </p>
                     </div>
                 </div>
             </div>
