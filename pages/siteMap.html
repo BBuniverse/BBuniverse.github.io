@@ -3,6 +3,7 @@
     <link href="../css/table.css" rel="stylesheet" type="text/css">
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
     <link href="../css/siteMap.css" rel="stylesheet" type="text/css">
+    <script src="../js/time.js" type="text/javascript" charset="utf-8"></script>
 
     <head>
         <meta charset="utf-8">
@@ -33,10 +34,10 @@
                         <td> <a href="work.html"> Work Exp </a></td>
                     </tr>
                     <tr>
-                        <td> <a href="imageMap.html"> Image Map </a></td>
+                        <td> <a href="imageMap.html"> Coding Equipment </a></td>
                     </tr>
                     <tr>
-                        <td> <a href="gallery.html"> Image Gallery </a></td>
+                        <td> <a href="gallery.html"> Computer's Gallery </a></td>
                     </tr>
                 </table>
             </div>
@@ -66,12 +67,6 @@
         </footer>
     </body>
     <script type="text/javascript">
-        function change() {
-            var date = new Date();
-            var mytime = date.toLocaleTimeString();
-            document.getElementById('time').innerHTML = mytime;
-        }
-
         change()
         setInterval("change()", 1000)
     </script>

@@ -3,9 +3,12 @@
     <link href="../css/table.css" rel="stylesheet" type="text/css">
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
     <link href="../css/imageMap.css" rel="stylesheet" type="text/css" />
+    <script src="../js/time.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/imageMap.js" type="text/javascript" charset="utf-8"></script>
+
     <head>
         <meta charset="utf-8">
-        <title> Image Map </title>
+        <title> Equipment Map </title>
     </head>
     <body>
         <main>
@@ -15,28 +18,17 @@
                 </div>
                 <div class="imageMap">
                     <div>
-                        <img src="../Images/MacBookPro.jpg" width="340" height="400" usemap="#Computer">
-                        <map name="Computer">
-                            <area shape="rect" coords="100, 0, 340, 300"
-                                href="https://www.apple.com/shop/buy-mac/macbook-pro/16-inch" />
+                        <img src="../Images/equipment.png" width="700" height="500" usemap="#Equipment">
+                        <map name="Equipment">
+                            <area shape="rect" coords="47, 1, 446, 362"
+                                href="https://www.apple.com/shop/buy-mac/macbook-pro/16-inch" onclick=computer() />
+                            <area shape="rect" coords="85, 364, 411, 491"
+                                href="https://hhkeyboard.us/happyhacking/pro-hybrid/" onclick=keyboard() />
+                            <area shape="rect" coords="498, 292, 582, 408"
+                                href="https://www.logitech.com/en-us/products/mice/mx-master-3.910-005620.html"
+                                onclick=mouse() />
                         </map>
-                        <p> MacBookPro </p>
-                    </div>
-                    <div>
-                        <img src="../Images/HHKB.png" width="170" height="340" usemap="#Keyboard">
-                        <map name="Keyboard">
-                            <area shape="rect" coords="0, 50, 340, 170"
-                                href="https://hhkeyboard.us/happyhacking/pro-hybrid/" />
-                        </map>
-                        <p> HHKB </p>
-                    </div>
-                    <div>
-                        <img src="../Images/MXMaster3.webp" width="230" height="400" usemap="#Mouse">
-                        <map name="Mouse">
-                            <area shape="rect" coords="70, 0, 230, 400"
-                                href="https://www.logitech.com/en-us/products/mice/mx-master-3.910-005620.html" />
-                        </map>
-                        <p> MX Master3 </p>
+                        <p> Here is my coding equipment for self-study and working </p>
                     </div>
                 </div>
             </div>
@@ -66,12 +58,6 @@
         </footer>
     </body>
     <script type="text/javascript">
-        function change() {
-            var date = new Date();
-            var mytime = date.toLocaleTimeString();
-            document.getElementById('time').innerHTML = mytime;
-        }
-
         change()
         setInterval("change()", 1000)
     </script>

@@ -1,3 +1,12 @@
 .myTable {
-    margin: 50px 30px 20px 30px;
+    margin: 20px 30px
 }
+
+.tableFilter {
+    font-size: 13px;
+    font-family: helvetica;
+    margin: 0 10%;
+    padding: 0 30px;
+}
+
+.

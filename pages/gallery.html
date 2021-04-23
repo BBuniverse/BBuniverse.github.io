@@ -1,45 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link href="../css/table.css" rel="stylesheet" type="text/css">
+<html lang="en" dir="l">
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
     <link href="../css/gallery.css" rel="stylesheet" type="text/css">
+    <script src="../js/time.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/gallery.js" type="text/javascript" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <head>
         <meta charset="utf-8">
-        <title>Image Gallery</title>
+        <title> Computer Gallery </title>
     </head>
     <body>
         <div class="header">
-            <h1> Image Gallery</h1>
+            <h1> Computer's History </h1>
         </div>
-
         <main>
             <div class="gallery-section">
+
+                <!-- Images used to open the lightbox -->
                 <div class="inner-width">
+                    <section> 5 different generation in the computer history </section>
                     <div class="gallery">
-                        <a href="../Images/headBackGroud.jpg" class="image">
-                            <img src="../Images/headBackGroud.jpg" />
-                        </a>
-                        <a href="../Images/github.svg" class="image">
-                            <img src="../Images/github.svg" />
-                        </a>
-                        <a href="../Images/github.svg" class="image">
-                            <img src="../Images/github.svg" />
-                        </a>
-                        <a href="../Images/logo.jpg" class="image">
-                            <img src="../Images/logo.jpg" />
-                        </a>
-                        <a href="../Images/logo.jpg" class="image">
-                            <img src="../Images/logo.jpg" />
-                        </a>
-                        <a href="../Images/logo.jpg" class="image">
-                            <img src="../Images/logo.jpg" />
-                        </a>
-                        <a href="../Images/github.svg" class="image">
-                            <img src="../Images/github.svg" />
-                        </a>
-                        <a href="../Images/github.svg" class="image">
-                            <img src="../Images/github.svg" />
-                        </a>
+                        <img src="../Images/computer1.png" onclick="openGallery();currentPicture(1)"
+                            class="hover-shadow">
+                        <img src="../Images/computer2.png" onclick="openGallery();currentPicture(2)"
+                            class="hover-shadow">
+                        <img src="../Images/computer3.png" onclick="openGallery();currentPicture(3)"
+                            class="hover-shadow">
+                        <img src="../Images/computer4.png" onclick="openGallery();currentPicture(4)"
+                            class="hover-shadow">
+                        <img src="../Images/computer5.png" onclick="openGallery();currentPicture(5)"
+                            class="hover-shadow">
+                    </div>
+                    <section> 5 different type of the computer </section>
+                    <div class="gallery">
+                        <img src="../Images/computer6.png" onclick="openGallery();currentPicture(6)"
+                            class="hover-shadow">
+                        <img src="../Images/computer7.png" onclick="openGallery();currentPicture(7)"
+                            class="hover-shadow">
+                        <img src="../Images/computer8.png" onclick="openGallery();currentPicture(8)"
+                            class="hover-shadow">
+                        <img src="../Images/computer9.png" onclick="openGallery();currentPicture(9)"
+                            class="hover-shadow">
+                        <img src="../Images/computer10.png" onclick="openGallery();currentPicture(10)"
+                            class="hover-shadow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Gallery/Lightbox -->
+            <div id="myGallery" class="ligthBox">
+                <span class="close" onclick="closeGallery()">&times;</span>
+                <div class="boxContent">
+                    <div class="picture">
+                        <div class="numbertext">1 / 10</div>
+                        <img src="../Images/computer1.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">2 / 10</div>
+                        <img src="../Images/computer2.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">3 / 10</div>
+                        <img src="../Images/computer3.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">4 / 10</div>
+                        <img src="../Images/computer4.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">5 / 10</div>
+                        <img src="../Images/computer5.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">6 / 10</div>
+                        <img src="../Images/computer6.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">7 / 10</div>
+                        <img src="../Images/computer7.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">8 / 10</div>
+                        <img src="../Images/computer8.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">9 / 10</div>
+                        <img src="../Images/computer9.png">
+                    </div>
+                    <div class="picture">
+                        <div class="numbertext">10 / 10</div>
+                        <img src="../Images/computer10.png">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="indexUpdate(-1)">&#10094;</a>
+                    <a class="next" onclick="indexUpdate(1)">&#10095;</a>
+
+                    <!--  Show the index of gallery -->
+                    <div class="description">
+                        <p id="index"></p>
+                    </div>
+
+                    <!--  Thumbnail of all image -->
+                    <div class="gallery">
+                        <img class="thumbnail" src="../Images/computer1.png" onclick="currentPicture(1)"
+                            alt="The period of first generation was from 1946-1959. The computers of first generation used vacuum tubes as the basic components for memory and circuitry for CPU (Central Processing Unit). These tubes, like electric bulbs, produced a lot of heat and the installations used to fuse frequently. Therefore, they were very expensive and only large organizations were able to afford it.">
+                        <img class="thumbnail" src="../Images/computer2.png" onclick="currentPicture(2)"
+                            alt="The period of second generation was from 1959-1965. In this generation, transistors were used that were cheaper, consumed less power, more compact in size, more reliable and faster than the first generation machines made of vacuum tubes. In this generation, magnetic cores were used as the primary memory and magnetic tape and magnetic disks as secondary storage devices.">
+                        <img class="thumbnail" src="../Images/computer3.png" onclick="currentPicture(3)"
+                            alt="The period of third generation was from 1965-1971. The computers of third generation used Integrated Circuits (ICs) in place of transistors. A single IC has many transistors, resistors, and capacitors along with the associated circuitry.">
+                        <img class="thumbnail" src="../Images/computer4.png" onclick="currentPicture(4)"
+                            alt="The period of fourth generation was from 1971-1980. Computers of fourth generation used Very Large Scale Integrated (VLSI) circuits. VLSI circuits having about 5000 transistors and other circuit elements with their associated circuits on a single chip made it possible to have microcomputers of fourth generation.">
+                        <img class="thumbnail" src="../Images/computer5.png" onclick="currentPicture(5)"
+                            alt="The period of fifth generation is 1980-till date. In the fifth generation, VLSI technology became ULSI (Ultra Large Scale Integration) technology, resulting in the production of microprocessor chips having ten million electronic components.">
+                        <img class="thumbnail" src="../Images/computer6.png" onclick="currentPicture(6)"
+                            alt="A PC can be defined as a small, relatively inexpensive computer designed for an individual user.">
+                        <img class="thumbnail" src="../Images/computer7.png" onclick="currentPicture(7)"
+                            alt="Workstations generally come with a large, high-resolution graphics screen, large amount of RAM, inbuilt network support, and a graphical user interface.">
+                        <img class="thumbnail" src="../Images/computer8.png" onclick="currentPicture(8)" alt="Minicomputer
+It is a midsize multi-processing system capable of supporting up to 250 users simultaneously.">
+                        <img class="thumbnail" src="../Images/computer9.png" onclick="currentPicture(9)"
+                            alt="Mainframe is very large in size and is an expensive computer capable of supporting hundreds or even thousands of users simultaneously.">
+                        <img class="thumbnail" src="../Images/computer10.png" onclick="currentPicture(10)"
+                            alt="Supercomputers are one of the fastest computers currently available. ">
                     </div>
                 </div>
             </div>
@@ -61,6 +145,7 @@
                     </a>
                 </div>
                 <div id="time"></div>
+
                 <!-- Back to the top of the website -->
                 <div style="clear:both;text-align:right;">
                     <a href="javascript:scrollTo(0,0)"> Back to top </a>
@@ -69,12 +154,6 @@
         </footer>
     </body>
     <script type="text/javascript">
-        function change() {
-            var date = new Date();
-            var mytime = date.toLocaleTimeString();
-            document.getElementById('time').innerHTML = mytime;
-        }
-
         change()
         setInterval("change()", 1000)
     </script>

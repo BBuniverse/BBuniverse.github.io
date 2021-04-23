@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    <script src="../js/time.js" type="text/javascript" charset="utf-8"></script>
+    
     <head>
         <meta charset="utf-8">
         <title>Work Exp</title>
@@ -35,12 +37,6 @@
         </footer>
     </body>
     <script type="text/javascript">
-        function change() {
-            var date = new Date();
-            var mytime = date.toLocaleTimeString();
-            document.getElementById('time').innerHTML = mytime;
-        }
-
         change()
         setInterval("change()", 1000)
     </script>

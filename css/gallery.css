@@ -6,57 +6,158 @@ h1 {
     margin-left: 2%;
 }
 
-h3 {
+h3,
+section {
     font-family: helvetica;
 }
 
 .gallery-section {
     margin: 0 10%;
+    margin-top: 5%;
     padding: 0 30px;
 }
 
-.inner-width {
-    margin: auto;
+.inner-width img:hover {
+    transform: scale(1.1) rotate(3deg);
 }
 
-.gallery-section .gallery {
+img.hover-shadow {
+    transition: 0.3s;
+    flex: 30%;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+.inner-width .gallery {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.gallery-section .image {
-    flex: 25%;
-    overflow: hidden;
+.boxContent .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.gallery-section img {
+.gallery img {
+    object-fit: contain;
+}
+
+.bigImage img {
+    margin: 0 auto;
+}
+
+.bigimage {
+    align-items: center;
+}
+
+.inner-width:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Turn off the light of background */
+.ligthBox {
+    display: none;
+    position: fixed;
+    /* z-index: 1; */
+    padding-top: 5%;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    max-height: 90%;
-    max-width: 90%;
+    background-color: black;
+}
+
+/* Gallery Content */
+.boxContent {
+    position: relative;
+    background-color: #FFFFFF;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+    max-width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.picture {
+    min-height: 400px;
+    display: none;
+    justify-content: center;
+}
+
+/* pictures turning */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    margin-top: -55px;
+    color: #ffffff;
+    font-size: 20px;
     transition: 0.4s;
 }
 
-.gallery img:hover {
-    transform: scale(1.4) rotate(15deg);
+.next {
+    right: 0;
 }
 
-@media screen and (max-width: 960px) {
-    .gallery-section .image {
-        flex: 33.33%;
-    }
+/* Change the color when hover to two buttons */
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 246, 166, 0.8);
 }
 
-@media screen and (max-width: 720px) {
-    .gallery-section .image {
-        flex: 50%;
-    }
+/* index / 10 */
+.numbertext {
+    color: #c1c000;
+    font-size: 20px;
+    padding: 8px 8px;
+    position: fixed;
+    top: 5%;
 }
 
-@media screen and (max-width: 480px) {
-    .gallery-section .image {
-        flex: 100%;
-    }
+/* show the description of the index text */
+.description {
+    background-color: #000000;
+    padding: 2px 16px;
+    font-family: helvetica;
+    color: white;
+}
+
+img.thumbnail {
+    transition: 0.3s;
+    opacity: 0.6;
+    flex: 20%;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+img.thumbnail:hover {
+    transform: scale(1.2)
+}
+
+.active,
+.thumbnail:hover {
+    opacity: 1;
 }
