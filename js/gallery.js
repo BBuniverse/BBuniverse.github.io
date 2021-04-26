@@ -31,6 +31,7 @@ function displayPicture(n) {
     if (n < 1) {
         pictureIndex = pictures.length
     }
+    // Hidden the previous picture
     for (i = 0; i < pictures.length; i++) {
         pictures[i].style.display = "none";
     }

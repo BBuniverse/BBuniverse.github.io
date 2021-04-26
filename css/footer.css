@@ -27,5 +27,7 @@ h3 {
 }
 
 #time {
+    font-size: 16px;
+    color: #5f0001;
     text-align: center;
 }
