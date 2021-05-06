@@ -3,8 +3,8 @@
     <link href="../css/table.css" rel="stylesheet" type="text/css">
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
     <link href="../css/sourcelog.css" rel="stylesheet" type="text/css">
-    <script src="../js/tableFilter.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/time.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/tableFilter.js"></script>
+    <script src="../js/time.js"></script>
 
     <head>
         <meta charset="utf-8">
@@ -19,11 +19,11 @@
                 <br />
                 <div class="filter">
                     <p> Choose the kind of Resource you want to check </p>
-                    <input type="text" onkeydown="filterResource(this)" onkey />
+                    <input type="text" onkeydown="filterResource(this)" />
                 </div>
                 <div class="filter">
                     <p> Choose the kind of Type you want to check </p>
-                    <input type="text" onkeydown="filterType(this)" onkey />
+                    <input type="text" onkeydown="filterType(this)" />
 
                 </div>
             </div>
@@ -168,6 +168,20 @@
                         <td> <a> Graphic </a></td>
                         <td> For Image Gallery </td>
                     </tr>
+                    <tr>
+                        <td> Make facebook like button </td>
+                        <td> <a href="https://developers.facebook.com/docs/plugins/">
+                                Facebook </a> </td>
+                        <td> <a> Tool </a></td>
+                        <td> Build social plugin </td>
+                    </tr>
+                    <tr>
+                        <td> Facebook feeds </td>
+                        <td> <a href="https://developers.facebook.com/docs/plugins/page-plugin">
+                                Facebook </a> </td>
+                        <td> <a> Tool </a></td>
+                        <td> Build facebook feeds </td>
+                    </tr>
                 </table>
             </div>
         </main>
@@ -178,25 +192,26 @@
                 <strong> TBW </strong>
                 <div class="socialNetwork">
                     <a href="https://www.facebook.com/chinatangbowen/">
-                        <img src="../Images/facebook.svg" />
+                        <img src="../Images/facebook.svg" alt="" />
                     </a>
                     <a href="https://www.instagram.com/lollipop_bowen/">
-                        <img src="../Images/instagram.svg" />
+                        <img src="../Images/instagram.svg" alt="" />
                     </a>
                     <a href="">
-                        <img src="../Images/github.svg" />
+                        <img src="../Images/github.svg" alt="" />
                     </a>
                 </div>
                 <div id="time"></div>
 
                 <div style="clear:both;text-align:right;">
-                    <a href="javascript:scrollTo(0,0)"> Back to top </a>
+                    <!-- <a href="javascript:scrollTo(0,0)"> Back to top </a> -->
+                    <a href="siteMap.html"> Back to Site Map </a>
                 </div>
             </div>
         </footer>
+        <script>
+            change()
+            setInterval("change()", 1000)
+        </script>
     </body>
-    <script type="text/javascript">
-        change()
-        setInterval("change()", 1000)
-    </script>
 </html>

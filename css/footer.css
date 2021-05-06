@@ -31,3 +31,8 @@ h3 {
     color: #5f0001;
     text-align: center;
 }
+
+/* Hide the hyper link's underline */
+a {
+    text-decoration: none;
+}

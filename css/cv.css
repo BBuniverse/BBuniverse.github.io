@@ -1,0 +1,28 @@
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    /* main  section */
+    margin: 0 10%;
+    padding: 0 30px
+}
+
+.timeGap {
+    padding: 20px 0;
+}
+
+.list ul li {
+    /* list-style-type: none; */
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+hr {
+    margin-top: 0;
+}
+
+.temp{
+    padding: 10% ;
+}

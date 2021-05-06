@@ -11,7 +11,7 @@ section {
     font-family: helvetica;
 }
 
-.gallery-section {
+.gallery-section, .network {
     margin: 0 10%;
     margin-top: 5%;
     padding: 0 30px;
