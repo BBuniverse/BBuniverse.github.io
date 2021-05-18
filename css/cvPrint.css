@@ -1,0 +1,42 @@
+@media print {
+
+    /* printing margin style */
+    @page {
+        size: A4 portrait;
+        margin: 2cm 2cm 3.5cm;
+    }
+
+    /* Hidden the header and footer */
+    h1 {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+
+/* Setting suiable font size for printing */
+h1 {
+    margin: 0 0;
+    font-size: 20px;
+}
+
+h3,
+h3 i {
+    font-size: 18px;
+}
+
+.timeGap {
+    font-size: 13px;
+}
+
+.items {
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+hr {
+    border: 1px solid #000000;
+}

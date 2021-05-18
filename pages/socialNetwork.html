@@ -4,36 +4,136 @@
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
     <link href="../css/socialNetwork.css" rel="stylesheet" type="text/css">
     <script src="../js/time.js"></script>
+    <script src="../js/feedsFilter.js"></script>
 
     <head>
         <meta charset="utf-8">
-        <title> Computer History on Social Network </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> Social Network Feeds </title>
     </head>
     <body>
         <main>
             <div>
-                <h1> Computer History on Social Network </h1>
+                <h1> Social Network Feeds </h1>
+            </div>
+
+            <div class="filter">
+                <input type="text" onkeypress="filter(this)" id="input" style="width: 17%;"
+                    placeholder="You can select first n'th feeds to browse." />
             </div>
             <div class="network">
-                <div class="facebook">
-                    <div class="feeds">
+                <div class="feeds">
+                    <div class="feedsInfo">
+                        More computer's development history information.
+                    </div>
+                    <div class="feed">
                         <iframe
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                            width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
                     </div>
-                    <div class="like">
+                    <div class="button">
                         <iframe
                             src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory&layout=button_count&size=large&appId"
+                            width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+
+                        <iframe
+                            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory%2F&width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
+                            width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="feeds">
+                    <div class="feedsInfo">
+                        Here is one of my favorite tech companies.
+                    </div>
+                    <div class="feed">
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <div class="button">
+                        <iframe
+                            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple&layout=button_count&size=large&appId"
+                            width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+
+                        <iframe
+                            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
                             width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
                     </div>
                 </div>
-            </div>
+                <div class="feeds">
+                    <div class="feedsInfo">
+                        Lots of interesting projects on this site.
+                    </div>
+                    <div class="feed">
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgithub&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <div class="button">
+                        <iframe
+                            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fgithub&layout=button_count&size=large&appId"
+                            width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+
+                        <iframe
+                            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fgithub%2F&width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
+                            width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="feeds">
+                    <div class="feedsInfo">
+                        Anu CECS Feeds.
+                    </div>
+                    <div class="feed">
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <div class="button">
+                        <iframe
+                            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs&layout=button_count&size=large&appId"
+                            width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+
+                        <iframe
+                            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs%2F&width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
+                            width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                </div>
         </main>
 
         <footer class="footer">
@@ -42,13 +142,13 @@
                 <strong> TBW </strong>
                 <div class="socialNetwork">
                     <a href="https://www.facebook.com/chinatangbowen/">
-                        <img src="../Images/facebook.svg" alt=""/>
+                        <img src="../Images/facebook.svg" alt="" />
                     </a>
                     <a href="https://www.instagram.com/lollipop_bowen/">
-                        <img src="../Images/instagram.svg" alt=""/>
+                        <img src="../Images/instagram.svg" alt="" />
                     </a>
                     <a href="">
-                        <img src="../Images/github.svg" alt=""/>
+                        <img src="../Images/github.svg" alt="" />
                     </a>
                 </div>
                 <div id="time"></div>

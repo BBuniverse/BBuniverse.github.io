@@ -11,7 +11,7 @@ h3 {
 }
 
 .footer-owner {
-    font-size: 13px;
+    font-size: 1vw;
     font-family: helvetica;
     margin: 0 10%;
     padding: 0 30px;
@@ -21,13 +21,14 @@ h3 {
     margin-top: 10px;
 }
 
+/* Adapt size */
 .socialNetwork img {
-    width: 32px;
-    height: 32px;
+    width: 1.5vw;
+    height: 1.5vw;
 }
 
 #time {
-    font-size: 16px;
+    font-size: 1vw;
     color: #5f0001;
     text-align: center;
 }

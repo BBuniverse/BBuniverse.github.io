@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-size: 0.9vw;
 }
 
 .fixed-header {
@@ -15,8 +16,8 @@ body {
 .fixed-header-logo img {
     float: left;
     display: flex;
-    height: 75px;
-    width: 126px;
+    height: 4vw;
+    width: 5.7vw;
 }
 
 .fixed-header-nav {
@@ -34,7 +35,7 @@ body {
 }
 
 .fixed-header-nav a {
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: helvetica;
     display: flex;
     color: #875646;
@@ -63,27 +64,27 @@ body {
     padding-bottom: 30%;
     padding-left: 5%;
     color: #fff8d4;
-    font-size: 50px;
+    font-size: 3.5vw;
     font-family: times;
 }
 
 .split {
     display: flex;
     /* main  section */
-    margin: 0 10%;
-    padding: 0 30px
+    margin: 20px 10%;
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .leftSplit {
-    margin: 20px 0;
-    margin-right: 10%;
-    /* margin: 0 10%; */
+    margin: 5px 0;
+    margin-right: 5%;
+    width: 50vw;
 }
 
 .rightSplit {
-    flex: 1 0 auto;
-    margin: 20px 0;
-    margin-right: 10%;
+    margin: 0px 2px;
 }
 
 .description {
