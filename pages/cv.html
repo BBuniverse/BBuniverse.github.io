@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link href="../css/table.css" rel="stylesheet" type="text/css">
-    <link href="../css/footer.css" rel="stylesheet" type="text/css">
-    <link href="../css/cv.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="../css/cvPrint.css" rel="stylesheet" type="text/css" media="print">
-    <script src="../js/time.js" type="text/javascript" charset="utf-8"></script>
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title> Bowen Tang </title>
+
+        <link href="../css/table.css" rel="stylesheet" type="text/css">
+        <link href="../css/footer.css" rel="stylesheet" type="text/css">
+        <link href="../css/cv.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../css/cvPrint.css" rel="stylesheet" type="text/css" media="print">
+        <script src="../js/time.js"></script>
     </head>
+
     <body>
         <main>
             <div>
@@ -20,7 +21,7 @@
             <div class="container">
                 <div class="split">
                     <div class="person">
-                        <h3> Bowen Tang (<a href="mailto:u6726602@anu.edu.au?subject=Nice to meet you">
+                        <h3> Bowen Tang (<a href="mailto:u6726602@anu.edu.au?subject=Nice%20to%20meet%20you">
                                 u6726602@anu.edu.au</a>) </h3>
                     </div>
 
@@ -36,7 +37,9 @@
                         </div>
                         <br>
                         <div class="items">
-                            <li>Relative Courses: HTML, Java, Machine Learning, Deep Learning, Computer Vision</li>
+                            <ul>
+                                <li>Relative Courses: HTML, Java, Machine Learning, Deep Learning, Computer Vision</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="internship">
@@ -52,9 +55,11 @@
                             </div>
                             <br>
                             <div class="items">
-                                <li> Train a model of clothing target recognition. The real-time recognition and
-                                    detection of objects by the camera are realized successfully.
-                                </li>
+                                <ul>
+                                    <li> Train a model of clothing target recognition. The real-time recognition and
+                                        detection of objects by the camera are realized successfully.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="term">
@@ -67,10 +72,12 @@
                             </div>
                             <br>
                             <div class="items">
-                                <li> Using CFD to train a model to simulate the Sewage discharge system.
-                                </li>
-                                <li> Combining deep learning with CFD to do simulation.
-                                </li>
+                                <ul>
+                                    <li> Using CFD to train a model to simulate the Sewage discharge system.
+                                    </li>
+                                    <li> Combining deep learning with CFD to do simulation.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="temp"> </div>
@@ -86,13 +93,13 @@
                 <strong> TBW </strong>
                 <div class="socialNetwork">
                     <a href="https://www.facebook.com/chinatangbowen/">
-                        <img src="../Images/facebook.svg" />
+                        <img src="../Images/facebook.svg" alt="" />
                     </a>
                     <a href="https://www.instagram.com/lollipop_bowen/">
-                        <img src="../Images/instagram.svg" />
+                        <img src="../Images/instagram.svg" alt="" />
                     </a>
                     <a href="">
-                        <img src="../Images/github.svg" />
+                        <img src="../Images/github.svg" alt="" />
                     </a>
                 </div>
                 <div id="time"></div>
@@ -103,9 +110,9 @@
                 </div>
             </div>
         </footer>
+        <script>
+            change()
+            setInterval("change()", 1000)
+        </script>
     </body>
-    <script type="text/javascript">
-        change()
-        setInterval("change()", 1000)
-    </script>
 </html>

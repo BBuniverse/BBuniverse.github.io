@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link href="../css/table.css" rel="stylesheet" type="text/css">
-    <link href="../css/footer.css" rel="stylesheet" type="text/css">
-    <link href="../css/socialNetwork.css" rel="stylesheet" type="text/css">
-    <script src="../js/time.js"></script>
-    <script src="../js/feedsFilter.js"></script>
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title> Social Network Feeds </title>
+
+        <link href="../css/table.css" rel="stylesheet" type="text/css">
+        <link href="../css/footer.css" rel="stylesheet" type="text/css">
+        <link href="../css/socialNetwork.css" rel="stylesheet" type="text/css">
+        <script src="../js/time.js"></script>
+        <script src="../js/feedsFilter.js"></script>
     </head>
+
     <body>
         <main>
             <div>
                 <h1> Social Network Feeds </h1>
             </div>
-
+            <div class="intro">
+                <p> With the rapid development of the Internet, it is becoming more and more difficult for people to
+                    obtain what they are really interested in or care about. More specifically, there are various
+                    methods that humans use to obtain information, such as messages, newsletters, and RSS. As far as I
+                    know, these methods will collect a lot of information for you. Therefore, you need to find what you
+                    really interested in in a series of feeds.
+                </p>
+                <p>
+                    Therefore, I try to browse only those that I interested in feeds twice a day. Since the following
+                    feed is an official account of the group to which it belongs, only the most valuable information
+                    will be posted. I can get multiple opinions from the comments on each post. The methods I mentioned
+                    at the beginning are very weak to achieve this. Other points of view have better helped me to refine
+                    the key ideas or information of each post.</p>
+            </div>
             <div class="filter">
-                <input type="text" onkeypress="filter(this)" id="input" style="width: 17%;"
+                <input type="text" onkeypress="filter(this)" id="input" style="width: 250px;"
                     placeholder="You can select first n'th feeds to browse." />
             </div>
             <div class="network">
@@ -28,22 +42,22 @@
                     </div>
                     <div class="feed">
                         <iframe
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory&tabs=timeline
+                            &width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                             width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
                     </div>
                     <div class="button">
-                        <iframe
-                            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory&layout=button_count&size=large&appId"
-                            width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                            allowfullscreen="true"
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory&
+                            layout=button_count&size=large&appId" width="120" height="28"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
 
-                        <iframe
-                            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory%2F&width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomputerhistory%2F&
+                            width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
                             width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
@@ -56,23 +70,23 @@
                     </div>
                     <div class="feed">
                         <iframe
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple&tabs=timeline
+                            &width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                             width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
                     </div>
                     <div class="button">
-                        <iframe
-                            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple&layout=button_count&size=large&appId"
-                            width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                            allowfullscreen="true"
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple&
+                            layout=button_count&size=large&appId" width="110" height="28"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
 
-                        <iframe
-                            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
-                            width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&width=110&
+                            layout=button_count&action=like&size=large&share=false&height=21&appId" width="110"
+                            height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
@@ -83,24 +97,23 @@
                         Lots of interesting projects on this site.
                     </div>
                     <div class="feed">
-                        <iframe
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgithub&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                            width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                            allowfullscreen="true"
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F
+                            github&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&
+                            show_facepile=true&appId" width="320" height="500" style="border:none;overflow:hidden"
+                            scrolling="no" frameborder="0" allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
                     </div>
                     <div class="button">
-                        <iframe
-                            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fgithub&layout=button_count&size=large&appId"
-                            width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                            allowfullscreen="true"
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fgithub&
+                            layout=button_count&size=large&appId" width="110" height="28"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
 
-                        <iframe
-                            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fgithub%2F&width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
-                            width="110" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fgithub%2F&width=110&
+                            layout=button_count&action=like&size=large&share=false&height=21&appId" width="110"
+                            height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
@@ -112,28 +125,29 @@
                     </div>
                     <div class="feed">
                         <iframe
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs&tabs=timeline&width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs&tabs=timeline&
+                            width=320&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                             width="320" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
                     </div>
                     <div class="button">
-                        <iframe
-                            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs&layout=button_count&size=large&appId"
-                            width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                            allowfullscreen="true"
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs&l
+                            ayout=button_count&size=large&appId" width="120" height="28"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
 
-                        <iframe
-                            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs%2F&width=110&layout=button_count&action=like&size=large&share=false&height=21&appId"
-                            width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fanucecs%2F&width=110&
+                            layout=button_count&action=like&size=large&share=false&height=21&appId" width="120"
+                            height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
                     </div>
                 </div>
+            </div>
         </main>
 
         <footer class="footer">

@@ -1,5 +1,9 @@
 .myTable {
-    margin: 20px 30px
+    margin: 20px 30px;
+}
+
+.myTable table tr td{
+    border: 1px solid #000000;
 }
 
 .tableFilter {

@@ -8,21 +8,17 @@
 }
 
 .timeGap {
-    /* font-size: 18px; */
-    font-size: 1vw;
+    font-size: 1.3vw;
     padding: 20px 0;
 }
 
 
 h3 {
-    /* font-size: 20px; */
     font-size: 1.3vw;
-    /* margin-bottom: 0; */
 }
 
-h3 i {
-    /* font-size: 20px; */
-    font-size: 1.2vw;
+.items ul li {
+    font-size: 1.3vw;
 }
 
 .container hr {
